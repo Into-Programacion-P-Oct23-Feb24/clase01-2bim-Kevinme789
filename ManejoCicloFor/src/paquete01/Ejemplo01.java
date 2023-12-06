@@ -15,14 +15,19 @@ public class Ejemplo01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // Para acumular cadenas hacemos el uso de String.format y realizaremos
+        // la impresion de toda la cadena en un solo printf
+        String acumulador = "";
 
         for (int i = 1; i <= 10; i++) {
-            System.out.printf("%d\n", i);
+            acumulador = String.format("%s%d", acumulador, i);
+  
         }
         
         for (int i = 1; i < 11; i++) {
-            System.out.printf("%d\n", i);
+            acumulador = String.format("%s%d", acumulador, i);
         }
+        System.out.printf("%s", acumulador);
 
     }
 
