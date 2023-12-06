@@ -13,6 +13,7 @@ public class Ejemplo07 {
     public static void main(String[] args) {
         int operacion;
         String mensajeFinal = "";
+        //Un ciclo repetitivo dentro de otro para hacer un codigo mas corto y eficiente
         for (int i = 1; i <= 50; i++) { // for 01
             //System.out.printf("Tabla de multiplicar del número %d\n", i);
             mensajeFinal = String.format("%sTabla de multiplicar del número %d\n", 
@@ -24,6 +25,7 @@ public class Ejemplo07 {
                         mensajeFinal, i, contador, operacion);
             }
             // System.out.println("\n");
+            //Genera un salto de linea al final de la cadena
              mensajeFinal= String.format("%s\n", mensajeFinal);
         } // termina for 01
         
